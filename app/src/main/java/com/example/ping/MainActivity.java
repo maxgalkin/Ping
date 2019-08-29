@@ -79,9 +79,10 @@ public class MainActivity extends AppCompatActivity {
         pingThread = new Thread(() -> {
             try  {
                 while (isRunning) {
-                    new InternetCheck(internet -> {
-                        UpdateText("Is internet available? " + internet);
-                        ChangeStatusIcons(internet);
+                    new InternetCheck(adapterAddress -> {
+                        Boolean isAvailable = (!adapterAddress.isEmpty());
+                        UpdateText("Is internet available? " + isAvailable );
+                        ChangeStatusIcons(isAvailable);
                     });
                     for (int i=0; isRunning && i<checkTimeoutInSeconds*10; i++) {
                         Thread.sleep(100l);

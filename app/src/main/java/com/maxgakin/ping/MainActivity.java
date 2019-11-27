@@ -1,6 +1,5 @@
-package com.example.ping;
+package com.maxgakin.ping;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -8,6 +7,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.maxgakin.ping.R;
 
 public class MainActivity extends AppCompatActivity {
     private volatile boolean isRunning = true;

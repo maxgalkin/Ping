@@ -1,4 +1,4 @@
-package com.example.ping;
+package com.maxgakin.ping;
 
 import android.content.Context;
 

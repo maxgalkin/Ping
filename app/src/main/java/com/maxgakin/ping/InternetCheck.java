@@ -1,7 +1,6 @@
-package com.example.ping;
+package com.maxgakin.ping;
 
 import android.os.AsyncTask;
-import android.util.Log;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
